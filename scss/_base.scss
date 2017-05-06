@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'mixins';
+a {
+	color: $base-font-color;
+	font-size: $base-font-size * 2;
+}
+
+p {
+	@include base-font-typography;
+	font-style: italic;
+}
+
+h1 {
+	@include header-typography(4em, #00f);
+}
